@@ -22,8 +22,7 @@ website:
     right:
       - text: "Home"
         file: index.qmd
-      - text: "My Resume"
-        file: resume.qmd
+
 
 
 format:  
