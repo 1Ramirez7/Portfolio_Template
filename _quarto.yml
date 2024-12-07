@@ -24,7 +24,8 @@ website:
         file: index.qmd
       - text: "My Resume"
         file: resume.qmd
-
+      - text: "Python"
+        file: python.qmd
 
 
 
