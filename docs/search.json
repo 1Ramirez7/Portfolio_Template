@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Your Name’s CV",
+    "section": "",
+    "text": "[Your Desired Job Title or Professional Identity]"
+  },
+  {
+    "objectID": "resume.html#profile",
+    "href": "resume.html#profile",
+    "title": "Your Name’s CV",
+    "section": "Profile",
+    "text": "Profile\n[Insert a brief, professional summary about yourself here, focusing on your skills, experiences, or interests relevant to your desired job role.]"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Your Name’s CV",
+    "section": "Education",
+    "text": "Education\n[Expected Graduation or Completed Date]\n[Degree Title], [University Name], [Location]\n- Minor/Specialization: [Optional Details] - Relevant Courses or Focus Areas: [Optional Details]"
+  },
+  {
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Your Name’s CV",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\n[Job Title]\n[Company Name], [Location]\n[Start Date] - [End Date or Present] - [Brief description of your responsibilities or achievements in this role.] - [Another point showcasing a skill, achievement, or task.]\n\n\n[Job Title]\n[Company Name], [Location]\n[Start Date] - [End Date or Present] - [Brief description of your responsibilities or achievements in this role.] - [Another point showcasing a skill, achievement, or task.]\n\n\n[Optional Additional Role]\n[Company Name], [Location]\n[Start Date] - [End Date or Present] - [Brief description of your responsibilities or achievements in this role.]"
+  },
+  {
+    "objectID": "resume.html#volunteer-experience",
+    "href": "resume.html#volunteer-experience",
+    "title": "Your Name’s CV",
+    "section": "Volunteer Experience",
+    "text": "Volunteer Experience\n\n[Role Title]\n[Organization Name], [Location]\n[Start Date] - [End Date] - [Brief description of your volunteer activities or contributions.]\n\n\n[Role Title]\n[Organization Name], [Location]\n[Start Date] - [End Date] - [Brief description of your volunteer activities or contributions.]"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Your Name’s CV",
+    "section": "Skills",
+    "text": "Skills\n\nLanguages: [e.g., Fluent in Spanish, English, and French].\nTechnical Skills: [e.g., Excel, R, Python, SQL].\nKey Competencies: [e.g., Management, Leadership, Strategic Thinking].\nSpecializations: [e.g., Financial Modeling, Data Visualization]."
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Your Name’s CV",
+    "section": "Certifications",
+    "text": "Certifications\n\n[Certification Name], Issued [Date]\n[Certification Name], Issued [Date]\n\n\nLast updated: March 1400"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Albert Einstein",
