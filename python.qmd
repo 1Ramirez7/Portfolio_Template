@@ -34,19 +34,15 @@ plt.show()
 ```
 
 ```{python}
-# Import seaborn
-import seaborn as sns
+# Import plotly
+import plotly.express as px
 
-sns.set(style="whitegrid")
-sns.lineplot(data=data, x="x", y="y", label="sin(x)")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.title("Seaborn Plot of sin(x)")
-plt.legend()
-plt.show()
+# Create an interactive plot
+fig = px.line(data, x="x", y="y", title="Interactive Plot of sin(x)")
+fig.show()
+
 
 ```
-
 
 
 
@@ -73,3 +69,7 @@ shell("pip freeze > requirements.txt")
 
 library(reticulate)
 py_install(c("seaborn"))
+
+
+library(reticulate)
+py_install(c("plotly"))
