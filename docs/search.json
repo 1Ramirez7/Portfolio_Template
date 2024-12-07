@@ -46,13 +46,13 @@
     "href": "resume.html#certifications",
     "title": "Your Name’s CV",
     "section": "Certifications",
-    "text": "Certifications\n\n[Certification Name], Issued [Date]\n[Certification Name], Issued [Date]\n\n\nLast updated: March 1400"
+    "text": "Certifications\n\n[Certification Name], Issued [Date]\n[Certification Name], Issued [Date]\n\n\nLast updated: March 1400\n\n\nproject: type: website output-dir: docs # renders htmls to docs folder website: title: “Albert Einstein’s Data Science Portfolio” favicon: Images/favicon.png back-to-top-navigation: true repo-url: https://github.com/1Ramirez7/Portfolio_Template #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line\npage-footer: border: true left: “Albert Einstein 1400©” right: - icon: linkedin href: https://www.linkedin.com/\nnavbar: background: primary search: true\nright: - text: “Home” file: index.qmd\nformat:\nhtml: theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode) light: flatly # more themes can be found here dark: darkly #light: cosmo #dark: [cosmo, theme-dark.scss] css: styles.css toc: true"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Albert Einstein",
     "section": "",
-    "text": "Introduction\nPortfolio Introduction\nThis portfolio was created as part of the Data Science minor at Brigham Young University, showcasing my skills and experiences in three key areas: Data Analysis, Machine Learning, and Data Visualization. Its primary purpose is to demonstrate the knowledge I have gained throughout the program and how I have applied it to real-world data challenges.\n\n\n\n\n Back to top"
+    "text": "Introduction\nPortfolio Introduction\nThis portfolio was created as part of the Data Science minor at Brigham Young University, showcasing my skills and experiences in three key areas: Data Analysis, Machine Learning, and Data Visualization. Its primary purpose is to demonstrate the knowledge I have gained throughout the program and how I have applied it to real-world data challenges.\n\n\nproject: type: website output-dir: docs # renders htmls to docs folder website: title: “Albert Einstein’s Data Science Portfolio” favicon: Images/favicon.png back-to-top-navigation: true repo-url: https://github.com/1Ramirez7/Portfolio_Template #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line\npage-footer: border: true left: “Albert Einstein 1400©” right: - icon: linkedin href: https://www.linkedin.com/\nnavbar: background: primary search: true\nright: - text: “Home” file: index.qmd\nformat:\nhtml: theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode) light: flatly # more themes can be found here dark: darkly #light: cosmo #dark: [cosmo, theme-dark.scss] css: styles.css toc: true\n\n\n Back to top"
   }
 ]
