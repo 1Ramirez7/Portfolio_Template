@@ -1,0 +1,35 @@
+project: 
+  type: website
+  output-dir: docs # renders htmls to docs folder
+website:
+  title: "Albert Einstein's Data Science Portfolio"
+  favicon: Images/favicon.png
+  back-to-top-navigation: true
+  repo-url: https://github.com/1Ramirez7/Portfolio_Template
+  #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line
+
+  page-footer: 
+    border: true
+    left: "Albert Einstein 1400©"
+    right: 
+      - icon: linkedin
+        href: https://www.linkedin.com/
+
+
+  navbar:
+    background: primary
+    search: true   
+    right:
+      - text: "Home"
+        file: index.qmd
+
+
+format:  
+  html:
+    theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode)
+      light: flatly # more themes can be found [here](https://quarto.org/docs/output-formats/html-themes.html)
+      dark: darkly
+      #light: cosmo
+      #dark: [cosmo, theme-dark.scss]
+    css: styles.css
+    toc: true
