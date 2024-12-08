@@ -49,10 +49,53 @@
     "text": "Certifications\n\n[Certification Name], Issued [Date]\n[Certification Name], Issued [Date]\n\n\nLast updated: March 1400"
   },
   {
+    "objectID": "projects/project3.html",
+    "href": "projects/project3.html",
+    "title": "Project title here",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Projects",
+      "project 3 name"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html",
+    "href": "projects/project1.html",
+    "title": "Project title here",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Projects",
+      "Project 1 name"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Albert Einstein",
     "section": "",
     "text": "Introduction\nPortfolio Introduction\nThis portfolio was created as part of the Data Science minor at Brigham Young University, showcasing my skills and experiences in three key areas: Data Analysis, Machine Learning, and Data Visualization. Its primary purpose is to demonstrate the knowledge I have gained throughout the program and how I have applied it to real-world data challenges.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/project2.html",
+    "href": "projects/project2.html",
+    "title": "Project title here",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Projects",
+      "project 2 name"
+    ]
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\nSample Projects Overview\n\nProject 1: Data Visualization and Reporting\n\nDeveloped interactive dashboards to visualize key business metrics and trends.\nAutomated data cleaning and integration processes to streamline reporting workflows.\nCollaborated with stakeholders to ensure insights were actionable and aligned with business goals.\n\n\n\nproject 1 name here\n\n\nProject 2: Predictive Modeling\n\nBuilt machine learning models to forecast customer demand with improved accuracy.\nIntegrated predictive insights into decision-making processes, reducing stockouts and excess inventory.\nConducted sensitivity analysis to assess the impact of key variables on predictions.\n\n\n\nproject 2 name here\n\n\nProject 3: Time Series Analysis\n\nAnalyzed historical sales data to identify seasonal patterns and trends.\nDesigned and implemented time series forecasting models to predict future sales performance.\nProvided actionable recommendations to optimize promotional strategies and inventory planning.\n\n\n\nproject 3 name here\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Projects"
+    ]
   }
 ]

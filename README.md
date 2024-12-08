@@ -104,3 +104,10 @@ shell("pip freeze > requirements.txt")
 
 
 
+Part 5
+
+Step 1: 
+Adding tab with a sidebar for multiple qmd files
+	- add tab to navbar and sidebar code to _quarto.yml
+Step 2: 
+Add qmd for the main tab, add folder with qmd files for main tab

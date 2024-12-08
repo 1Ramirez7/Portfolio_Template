@@ -1,6 +1,6 @@
 ---
-layout: cv
 title: Your Name's CV
+format: html
 ---
 
 
