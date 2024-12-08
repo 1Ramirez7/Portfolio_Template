@@ -1,13 +1,15 @@
 ---
 title: "Python QMD Example"
 format: html
-execute:
-  eval: false
 ---
 
-## Python Example with Common Libraries
+## Python Example with Common Libraries  
 
-```{python}
+This is an example of how to use Python code in a R Markdown document. We will use the `reticulate` package to run Python code in this R Markdown document.
+
+To a void issues when first using this template, or cloning to a new device. The python code chunks have been commented out so it doesn't trigger the jupyter notebook. Triggering the jupyter notebook will require a python environment, and the required jupyter notebook libraries. Downloading this libraries can be a hassle if not using python. When using Python you will have to follow the steps to make sure your project is properly set up to run python code in R-studio. 
+
+#```{python}
 # Import common libraries
 import pandas as pd
 import numpy as np
@@ -23,9 +25,9 @@ data = pd.DataFrame({
 data.head()
 
 
-```
+#```
 
-```{python}
+#```{python}
 # Plot the data
 plt.plot(data["x"], data["y"], label="sin(x)")
 plt.xlabel("x")
@@ -33,40 +35,10 @@ plt.ylabel("y")
 plt.title("Plot of sin(x)")
 plt.legend()
 plt.show()
-```
 
-```{python}
-# Import plotly
-import plotly.express as px
-
-# Create an interactive plot
-fig = px.line(data, x="x", y="y", title="Interactive Plot of sin(x)")
-
-fig.show()
+#```
 
 
-```
-
-
-```{python}
-
-# Import scipy for signal processing
-from scipy.signal import find_peaks
-
-# Find peaks in the sine wave
-peaks, _ = find_peaks(data["y"])
-
-# Plot with peaks highlighted
-plt.plot(data["x"], data["y"], label="sin(x)")
-plt.plot(data["x"].iloc[peaks], data["y"].iloc[peaks], "rx", label="Peaks")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.title("sin(x) with Peaks Highlighted")
-plt.legend()
-
-
-
-```
 
 
 
@@ -99,4 +71,5 @@ step 2.1: run python code and render python files
 Step 3 : creates/updates the requirements.txt file
 
 shell("pip freeze > requirements.txt")
+
 
