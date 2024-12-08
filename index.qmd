@@ -42,11 +42,15 @@ The following are instructions to edit this portfolio separated into sections. E
 - I have steps with videos on how to add new tabs and edit the YAML file.  
 - I mostly focused on the YAML code and preparing the website. The main thing about your portfolio is to show what you are capable of. This portfolio is all set up for you to do as you want with your `.qmd` files, and once rendered locally, they will push to the site. So go all out.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o4PJpgCnzT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
 **Step 4** *(if using Python code, optional)*  
 If you are not planning on using Python code, you can do this later. If you are planning on using Python code, then do the following:  
 
 1. Open the `python.qmd` file and remove the `#` from the ` ```{python}` so RStudio recognizes the Python chunks.  
-2. In the instructions for the video "Working with Python…part 1," follow and only do steps 1 to 1.9 (watch the first video). Watch the beginning of the second video until I get to the part about installing Python code, just so you understand more about environments and Python code.  
+2. In the instructions for the video "Working with Python…part 1," follow and only do steps 1 to 1.7 (watch the first video). Watch the beginning of the second video until I get to the part about installing Python code, just so you understand more about environments and Python code.  
 3. Once you have done steps 1 to 1.9 and have an environment successfully loaded, run the following code to install the Python libraries in the `requirements.txt` file:
 
     - Check for environment loaded:  
@@ -69,6 +73,13 @@ If you are not planning on using Python code, you can do this later. If you are 
 6. After installing new Python libraries, update the `requirements.txt` file:  
    `shell("pip freeze > requirements.txt")`
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q2hNXMCIJlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4uiqgaS5KyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
 
 
 # Adding a New Tab
@@ -118,11 +129,11 @@ Part 4. Working with Python code, environment, and `requirements.txt` files in R
 `library(reticulate)`  
 `py_config()`  
 
-**Step 1.7:** Create a virtual environment if needed (basically needed in any new device)  
+**Step 1.5:** Create a virtual environment if needed (basically needed in any new device)  
 `library(reticulate)`  
 `virtualenv_create("env")`  # env can be any name you want
 
-**Step 1.5:** Load environment for the project if needed. Use the code from Step 1 to make sure the new environment is loaded. If not, use this to load the new environment. Replace `env` with the actual name of your environment.  
+**Step 1.7:** Load environment for the project if needed. Use the code from Step 1 to make sure the new environment is loaded. If not, use this to load the new environment. Replace `env` with the actual name of your environment.  
 `library(reticulate)`  
 `use_virtualenv("env", required = TRUE)`  
 
