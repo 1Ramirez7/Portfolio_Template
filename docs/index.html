@@ -122,6 +122,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#instructions-to-editing-this-portfolio" id="toc-instructions-to-editing-this-portfolio" class="nav-link" data-scroll-target="#instructions-to-editing-this-portfolio">Instructions to editing this Portfolio</a></li>
+  <li><a href="#using-this-template-and-or-cloning-to-a-new-device" id="toc-using-this-template-and-or-cloning-to-a-new-device" class="nav-link" data-scroll-target="#using-this-template-and-or-cloning-to-a-new-device">Using this template and or cloning to a new device</a></li>
   <li><a href="#adding-a-new-tab" id="toc-adding-a-new-tab" class="nav-link" data-scroll-target="#adding-a-new-tab">Adding a New Tab</a></li>
   <li><a href="#adding-a-project-tab-with-multiple-files" id="toc-adding-a-project-tab-with-multiple-files" class="nav-link" data-scroll-target="#adding-a-project-tab-with-multiple-files">Adding a Project Tab with Multiple Files</a></li>
   <li><a href="#working-with-python-code-environment-in-r-studio" id="toc-working-with-python-code-environment-in-r-studio" class="nav-link" data-scroll-target="#working-with-python-code-environment-in-r-studio">Working with Python Code &amp; Environment in R-Studio</a></li>
@@ -162,6 +163,47 @@ ul.task-list li input[type="checkbox"] {
 <h1>Instructions to editing this Portfolio</h1>
 <p>The main goal of this instructions is focused around editing the _quarto.yml and the process of pushing to github for the site to render. If you follow the steps below on adding new files and editing the _quarto.yml your site should always render. I do not focus to much on the QMD details as that is one of the main concepts we have been working on in class. So you can edit the QMD files as you see fit, and as long as they render locally, they will be published to the site.</p>
 <p>The following are instructions to edit this portfolio separated into sections. Each section is intended to show how to add and or edit different parts of the portfolio.</p>
+</section>
+<section id="using-this-template-and-or-cloning-to-a-new-device" class="level1">
+<h1>Using this template and or cloning to a new device</h1>
+<p><strong>Step 1</strong><br>
+- Go to the template, and select “Use as template.” - Name it and set it to public. - Go to <strong>Settings &gt; Pages</strong>, and configure:<br>
+- Branch: <code>main</code><br>
+- Folder: <code>docs</code><br>
+- Hit save and watch it go live.</p>
+<p><strong>Step 2</strong><br>
+- Create the R project for this portfolio.<br>
+- Make an edit, render the site, and push to make sure you are connected to your portfolio:<br>
+<code>git remote show origin</code> <em>(use in R console or RStudio)</em><br>
+- Once you push to GitHub and the site is successfully built using GitHub Pages, you have successfully created your portfolio.</p>
+<p><strong>Step 3</strong><br>
+- I have steps with videos on how to add new tabs and edit the YAML file.<br>
+- I mostly focused on the YAML code and preparing the website. The main thing about your portfolio is to show what you are capable of. This portfolio is all set up for you to do as you want with your <code>.qmd</code> files, and once rendered locally, they will push to the site. So go all out.</p>
+<p><strong>Step 4</strong> <em>(if using Python code, optional)</em><br>
+If you are not planning on using Python code, you can do this later. If you are planning on using Python code, then do the following:</p>
+<ol type="1">
+<li><p>Open the <code>python.qmd</code> file and remove the <code>#</code> from the <code>```{python}</code> so RStudio recognizes the Python chunks.<br>
+</p></li>
+<li><p>In the instructions for the video “Working with Python…part 1,” follow and only do steps 1 to 1.9 (watch the first video). Watch the beginning of the second video until I get to the part about installing Python code, just so you understand more about environments and Python code.<br>
+</p></li>
+<li><p>Once you have done steps 1 to 1.9 and have an environment successfully loaded, run the following code to install the Python libraries in the <code>requirements.txt</code> file:</p>
+<ul>
+<li><p>Check for environment loaded:<br>
+<code>library(reticulate)</code><br>
+<code>py_config()</code></p></li>
+<li><p>Load environment if needed:<br>
+<code>library(reticulate)</code><br>
+<code>use_virtualenv("env", required = TRUE)</code></p></li>
+<li><p>Run to install Python libraries in <code>requirements.txt</code> file:<br>
+<code>shell("pip install -r requirements.txt")</code></p></li>
+</ul></li>
+<li><p>Render the <code>python.qmd</code> file, and you should be set to run Python code within RStudio.</p></li>
+<li><p>When installing new Python libraries (edit library names as needed):<br>
+<code>library(reticulate)</code><br>
+<code>py_install(c("pandas", "numpy", "matplotlib"))</code></p></li>
+<li><p>After installing new Python libraries, update the <code>requirements.txt</code> file:<br>
+<code>shell("pip freeze &gt; requirements.txt")</code></p></li>
+</ol>
 </section>
 <section id="adding-a-new-tab" class="level1">
 <h1>Adding a New Tab</h1>

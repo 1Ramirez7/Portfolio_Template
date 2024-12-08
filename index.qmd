@@ -21,6 +21,55 @@ The main goal of this instructions is focused around editing the _quarto.yml and
 
 The following are instructions to edit this portfolio separated into sections. Each section is intended to show how to add and or edit different parts of the portfolio. 
 
+# Using this template and or cloning to a new device
+
+**Step 1**  
+- Go to the template, and select "Use as template."
+- Name it and set it to public.
+- Go to **Settings > Pages**, and configure:  
+  - Branch: `main`  
+  - Folder: `docs`  
+- Hit save and watch it go live.
+
+**Step 2**  
+- Create the R project for this portfolio.  
+- Make an edit, render the site, and push to make sure you are connected to your portfolio:  
+  `git remote show origin`  *(use in R console or RStudio)*  
+- Once you push to GitHub and the site is successfully built using GitHub Pages, you have successfully created your portfolio.
+
+**Step 3**  
+- I have steps with videos on how to add new tabs and edit the YAML file.  
+- I mostly focused on the YAML code and preparing the website. The main thing about your portfolio is to show what you are capable of. This portfolio is all set up for you to do as you want with your `.qmd` files, and once rendered locally, they will push to the site. So go all out.
+
+**Step 4** *(if using Python code, optional)*  
+If you are not planning on using Python code, you can do this later. If you are planning on using Python code, then do the following:  
+
+1. Open the `python.qmd` file and remove the `#` from the ` ```{python}` so RStudio recognizes the Python chunks.  
+2. In the instructions for the video "Working with Python…part 1," follow and only do steps 1 to 1.9 (watch the first video). Watch the beginning of the second video until I get to the part about installing Python code, just so you understand more about environments and Python code.  
+3. Once you have done steps 1 to 1.9 and have an environment successfully loaded, run the following code to install the Python libraries in the `requirements.txt` file:
+
+    - Check for environment loaded:  
+      `library(reticulate)`  
+      `py_config()`
+
+    - Load environment if needed:  
+      `library(reticulate)`  
+      `use_virtualenv("env", required = TRUE)`
+
+    - Run to install Python libraries in `requirements.txt` file:  
+      `shell("pip install -r requirements.txt")`
+
+4. Render the `python.qmd` file, and you should be set to run Python code within RStudio.
+
+5. When installing new Python libraries (edit library names as needed):  
+   `library(reticulate)`  
+   `py_install(c("pandas", "numpy", "matplotlib"))`
+
+6. After installing new Python libraries, update the `requirements.txt` file:  
+   `shell("pip freeze > requirements.txt")`
+
+
+
 # Adding a New Tab
 
 **Adding a new tab to the portfolio.** I’m adding a resume.
