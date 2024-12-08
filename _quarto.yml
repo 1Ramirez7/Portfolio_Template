@@ -26,6 +26,8 @@ website:
         file: resume.qmd
       - text: "Projects"
         file: projects.qmd
+      - text: "Python"
+        file: python.qmd
 
 
   sidebar:

@@ -49,33 +49,14 @@
     "text": "Certifications\n\n[Certification Name], Issued [Date]\n[Certification Name], Issued [Date]\n\n\nLast updated: March 1400"
   },
   {
-    "objectID": "projects/project3.html",
-    "href": "projects/project3.html",
-    "title": "Project title here",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Back to top",
+    "text": "Projects\nSample Projects Overview\n\nProject 1: Data Visualization and Reporting\n\nDeveloped interactive dashboards to visualize key business metrics and trends.\nAutomated data cleaning and integration processes to streamline reporting workflows.\nCollaborated with stakeholders to ensure insights were actionable and aligned with business goals.\n\n\n\nproject 1 name here\n\n\nProject 2: Predictive Modeling\n\nBuilt machine learning models to forecast customer demand with improved accuracy.\nIntegrated predictive insights into decision-making processes, reducing stockouts and excess inventory.\nConducted sensitivity analysis to assess the impact of key variables on predictions.\n\n\n\nproject 2 name here\n\n\nProject 3: Time Series Analysis\n\nAnalyzed historical sales data to identify seasonal patterns and trends.\nDesigned and implemented time series forecasting models to predict future sales performance.\nProvided actionable recommendations to optimize promotional strategies and inventory planning.\n\n\n\nproject 3 name here\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Projects",
-      "project 3 name"
+      "Projects"
     ]
-  },
-  {
-    "objectID": "projects/project1.html",
-    "href": "projects/project1.html",
-    "title": "Project title here",
-    "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "Projects",
-      "Project 1 name"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Albert Einstein",
-    "section": "",
-    "text": "Introduction\nPortfolio Introduction\n\nport intro here but remove for instructions -\n\n\n\nInstructions to editing this Portfolio\nThe main goal of this instructions is focused around editing the _quarto.yml and the process of pushing to github for the site to render. If you follow the steps below on adding new files and editing the _quarto.yml your site should always render. I do not focus to much on the QMD details as that is one of the main concepts we have been working on in class. So you can edit the QMD files as you see fit, and as long as they render locally, they will be published to the site.\nThe following are instructions to edit this portfolio separated into sections. Each section is intended to show how to add and or edit different parts of the portfolio.\n\n\nAdding a New Tab\nAdding a new tab to the portfolio. I’m adding a resume.\n\nIn the _quarto.yml file add, under the navbar, and this two lines of code\ntext: \"My Resume\"\nfile: resume.qmd\nAdd/create the resume.qmd file to the root folder\n\nRender the resume.qmd file\n\nUpdate yml links\n\nBuild &gt; render website\n\nPush to GitHub and the site should be updated with your new tab.\n\n\n\n\n\nAdding a Project Tab with Multiple Files\nStep 1:\nAdding a tab with a sidebar for multiple QMD files\n- Add tab code to navbar and sidebar code to _quarto.yml\nStep 2:\n- Add QMD for the main tab\n- Add a folder with QMD files for the main tab\n\n\n\n\nWorking with Python Code & Environment in R-Studio\nPart 4. Working with Python code, environment, and requirements.txt files in R-Studio\nStep 1: Check what environment is active (likely a global environment)\nlibrary(reticulate)\npy_config()\nStep 1.7: Create a virtual environment if needed (basically needed in any new device)\nlibrary(reticulate)\nvirtualenv_create(\"env\")\nStep 1.5: Load environment for the project if needed. Use the code from Step 1 to make sure the new environment is loaded. If not, use this to load the new environment. Replace env with the actual name of your environment.\nlibrary(reticulate)\nuse_virtualenv(\"env\", required = TRUE)\nStep 2: Install Python libraries\nlibrary(reticulate)\npy_install(c(\"pandas\", \"numpy\", \"matplotlib\"))\nStep 2.1: Run Python code/file and render Python files\nStep 3: Create/update the requirements.txt file\nshell(\"pip freeze &gt; requirements.txt\")\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/project2.html",
@@ -89,13 +70,46 @@
     ]
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Albert Einstein",
     "section": "",
-    "text": "Projects\nSample Projects Overview\n\nProject 1: Data Visualization and Reporting\n\nDeveloped interactive dashboards to visualize key business metrics and trends.\nAutomated data cleaning and integration processes to streamline reporting workflows.\nCollaborated with stakeholders to ensure insights were actionable and aligned with business goals.\n\n\n\nproject 1 name here\n\n\nProject 2: Predictive Modeling\n\nBuilt machine learning models to forecast customer demand with improved accuracy.\nIntegrated predictive insights into decision-making processes, reducing stockouts and excess inventory.\nConducted sensitivity analysis to assess the impact of key variables on predictions.\n\n\n\nproject 2 name here\n\n\nProject 3: Time Series Analysis\n\nAnalyzed historical sales data to identify seasonal patterns and trends.\nDesigned and implemented time series forecasting models to predict future sales performance.\nProvided actionable recommendations to optimize promotional strategies and inventory planning.\n\n\n\nproject 3 name here\n\n\n\n\n\n Back to top",
+    "text": "Introduction\nPortfolio Introduction\n\nport intro here but remove for instructions -\n\n\n\nInstructions to editing this Portfolio\nThe main goal of this instructions is focused around editing the _quarto.yml and the process of pushing to github for the site to render. If you follow the steps below on adding new files and editing the _quarto.yml your site should always render. I do not focus to much on the QMD details as that is one of the main concepts we have been working on in class. So you can edit the QMD files as you see fit, and as long as they render locally, they will be published to the site.\nThe following are instructions to edit this portfolio separated into sections. Each section is intended to show how to add and or edit different parts of the portfolio.\n\n\nAdding a New Tab\nAdding a new tab to the portfolio. I’m adding a resume.\n\nIn the _quarto.yml file add, under the navbar, and this two lines of code\ntext: \"My Resume\"\nfile: resume.qmd\nAdd/create the resume.qmd file to the root folder\n\nRender the resume.qmd file\n\nUpdate yml links\n\nBuild &gt; render website\n\nPush to GitHub and the site should be updated with your new tab.\n\n\n\n\n\nAdding a Project Tab with Multiple Files\nStep 1:\nAdding a tab with a sidebar for multiple QMD files\n- Add tab code to navbar and sidebar code to _quarto.yml\nStep 2:\n- Add QMD for the main tab\n- Add a folder with QMD files for the main tab\n\n\n\n\nWorking with Python Code & Environment in R-Studio\nPart 4. Working with Python code, environment, and requirements.txt files in R-Studio\nStep 1: Check what environment is active (likely a global environment)\nlibrary(reticulate)\npy_config()\nStep 1.7: Create a virtual environment if needed (basically needed in any new device)\nlibrary(reticulate)\nvirtualenv_create(\"env\")\nStep 1.5: Load environment for the project if needed. Use the code from Step 1 to make sure the new environment is loaded. If not, use this to load the new environment. Replace env with the actual name of your environment.\nlibrary(reticulate)\nuse_virtualenv(\"env\", required = TRUE)\nStep 2: Install Python libraries\nlibrary(reticulate)\npy_install(c(\"pandas\", \"numpy\", \"matplotlib\"))\nStep 2.1: Run Python code/file and render Python files\nStep 3: Create/update the requirements.txt file\nshell(\"pip freeze &gt; requirements.txt\")\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/project1.html",
+    "href": "projects/project1.html",
+    "title": "Project title here",
+    "section": "",
+    "text": "Back to top",
     "crumbs": [
-      "Projects"
+      "Projects",
+      "Project 1 name"
     ]
+  },
+  {
+    "objectID": "projects/project3.html",
+    "href": "projects/project3.html",
+    "title": "Project title here",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Projects",
+      "project 3 name"
+    ]
+  },
+  {
+    "objectID": "python.html",
+    "href": "python.html",
+    "title": "Python QMD Example",
+    "section": "",
+    "text": "# Import common libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Create a sample DataFrame\ndata = pd.DataFrame({\n    \"x\": np.linspace(0, 10, 100),\n    \"y\": np.sin(np.linspace(0, 10, 100))\n})\n\n# Display the first few rows\ndata.head()\n\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n0\n0.00000\n0.000000\n\n\n1\n0.10101\n0.100838\n\n\n2\n0.20202\n0.200649\n\n\n3\n0.30303\n0.298414\n\n\n4\n0.40404\n0.393137\n\n\n\n\n\n\n\n\n# Plot the data\nplt.plot(data[\"x\"], data[\"y\"], label=\"sin(x)\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.title(\"Plot of sin(x)\")\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n\n# Import plotly\nimport plotly.express as px\n\n# Create an interactive plot\nfig = px.line(data, x=\"x\", y=\"y\", title=\"Interactive Plot of sin(x)\")\n\nfig.show()\n\n                                                \n\n\n\n# Import scipy for signal processing\nfrom scipy.signal import find_peaks\n\n# Find peaks in the sine wave\npeaks, _ = find_peaks(data[\"y\"])\n\n# Plot with peaks highlighted\nplt.plot(data[\"x\"], data[\"y\"], label=\"sin(x)\")\nplt.plot(data[\"x\"].iloc[peaks], data[\"y\"].iloc[peaks], \"rx\", label=\"Peaks\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.title(\"sin(x) with Peaks Highlighted\")\nplt.legend()\n\n\n\n\n\n\n\n\nstep 1. Check what environment is active library(reticulate) py_config()\nstep 1.5: load env for project if needed library(reticulate) use_virtualenv(“env”, required = TRUE)\nstep1.7: create virtual env if not needed (basically needed in any new device) library(reticulate) # I wonder if the line below can stand lsone virtualenv_create(“env”) # env is the name which can be anything, but will use env for instructions\nStep 2. Install python libraries library(reticulate) py_install(c(“pandas”, “numpy”, “matplotlib”))\nstep 2.1: run python code and render python files\nStep 3 : creates/updates the requirements.txt file shell(“pip freeze &gt; requirements.txt”)"
+  },
+  {
+    "objectID": "python.html#python-example-with-common-libraries",
+    "href": "python.html#python-example-with-common-libraries",
+    "title": "Python QMD Example",
+    "section": "",
+    "text": "# Import common libraries\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Create a sample DataFrame\ndata = pd.DataFrame({\n    \"x\": np.linspace(0, 10, 100),\n    \"y\": np.sin(np.linspace(0, 10, 100))\n})\n\n# Display the first few rows\ndata.head()\n\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n0\n0.00000\n0.000000\n\n\n1\n0.10101\n0.100838\n\n\n2\n0.20202\n0.200649\n\n\n3\n0.30303\n0.298414\n\n\n4\n0.40404\n0.393137\n\n\n\n\n\n\n\n\n# Plot the data\nplt.plot(data[\"x\"], data[\"y\"], label=\"sin(x)\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.title(\"Plot of sin(x)\")\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\n\n\n# Import plotly\nimport plotly.express as px\n\n# Create an interactive plot\nfig = px.line(data, x=\"x\", y=\"y\", title=\"Interactive Plot of sin(x)\")\n\nfig.show()\n\n                                                \n\n\n\n# Import scipy for signal processing\nfrom scipy.signal import find_peaks\n\n# Find peaks in the sine wave\npeaks, _ = find_peaks(data[\"y\"])\n\n# Plot with peaks highlighted\nplt.plot(data[\"x\"], data[\"y\"], label=\"sin(x)\")\nplt.plot(data[\"x\"].iloc[peaks], data[\"y\"].iloc[peaks], \"rx\", label=\"Peaks\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.title(\"sin(x) with Peaks Highlighted\")\nplt.legend()\n\n\n\n\n\n\n\n\nstep 1. Check what environment is active library(reticulate) py_config()\nstep 1.5: load env for project if needed library(reticulate) use_virtualenv(“env”, required = TRUE)\nstep1.7: create virtual env if not needed (basically needed in any new device) library(reticulate) # I wonder if the line below can stand lsone virtualenv_create(“env”) # env is the name which can be anything, but will use env for instructions\nStep 2. Install python libraries library(reticulate) py_install(c(“pandas”, “numpy”, “matplotlib”))\nstep 2.1: run python code and render python files\nStep 3 : creates/updates the requirements.txt file shell(“pip freeze &gt; requirements.txt”)"
   }
 ]
