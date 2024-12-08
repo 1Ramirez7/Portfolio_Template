@@ -1,11 +1,13 @@
 ---
 title: "Python QMD Example"
 format: html
+execute:
+  eval: false
 ---
 
 ## Python Example with Common Libraries
 
-```{python, eval=FALSE}
+```{python}
 # Import common libraries
 import pandas as pd
 import numpy as np
@@ -23,7 +25,7 @@ data.head()
 
 ```
 
-```{python, eval=FALSE}
+```{python}
 # Plot the data
 plt.plot(data["x"], data["y"], label="sin(x)")
 plt.xlabel("x")
@@ -33,7 +35,7 @@ plt.legend()
 plt.show()
 ```
 
-```{python, eval=FALSE}
+```{python}
 # Import plotly
 import plotly.express as px
 
@@ -46,7 +48,7 @@ fig.show()
 ```
 
 
-```{python, eval=FALSE}
+```{python}
 
 # Import scipy for signal processing
 from scipy.signal import find_peaks
@@ -69,23 +71,32 @@ plt.legend()
 
 
 step 1. Check what environment is active
+
 library(reticulate)
+
 py_config()
 
 step 1.5: load env for project if needed
+
 library(reticulate)
+
 use_virtualenv("env", required = TRUE)
 
 step1.7: create virtual env if not needed (basically needed in any new device)
+
 library(reticulate) # I wonder if the line below can stand lsone
+
 virtualenv_create("env") # env is the name which can be anything, but will use env for instructions
 
 Step 2. Install python libraries 
+
 library(reticulate)
+
 py_install(c("pandas", "numpy", "matplotlib"))
 
 step 2.1: run python code and render python files
 
 Step 3 : creates/updates the requirements.txt file
+
 shell("pip freeze > requirements.txt")
 

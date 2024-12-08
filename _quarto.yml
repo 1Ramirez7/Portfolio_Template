@@ -7,6 +7,9 @@ website:
   back-to-top-navigation: true
   repo-url: https://github.com/1Ramirez7/Portfolio_Template
   #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line
+  
+
+
 
   page-footer: 
     border: true
@@ -26,8 +29,8 @@ website:
         file: resume.qmd
       - text: "Projects"
         file: projects.qmd
-      - text: "Python"
-        file: python.qmd
+#      - text: "Python"
+#        file: python.qmd
 
 
   sidebar:
