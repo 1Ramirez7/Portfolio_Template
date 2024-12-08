@@ -119,7 +119,7 @@ Part 4. Working with Python code, environment, and `requirements.txt` files in R
 
 **Step 1.7:** Create a virtual environment if needed (basically needed in any new device)  
 `library(reticulate)`  
-`virtualenv_create("env")`  
+`virtualenv_create("env")`  # env can be any name you want
 
 **Step 1.5:** Load environment for the project if needed. Use the code from Step 1 to make sure the new environment is loaded. If not, use this to load the new environment. Replace `env` with the actual name of your environment.  
 `library(reticulate)`  
