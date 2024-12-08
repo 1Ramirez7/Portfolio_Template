@@ -12,4 +12,10 @@ format: html
 This portfolio was created as part of the Data Science minor at Brigham Young University, showcasing my skills and experiences in three key areas: Data Analysis, Machine Learning, and Data Visualization. Its primary purpose is to demonstrate the knowledge I have gained throughout the program and how I have applied it to real-world data challenges.
 
 
+Here are the instructions to edit this portfolio
 
+# Adding a new tab
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3b-PdI4lhbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
