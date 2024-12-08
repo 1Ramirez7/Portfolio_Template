@@ -3,6 +3,12 @@ title: "Python QMD Example"
 format: html
 ---
 
+
+<!-- 
+IMPORTANT before running python code in r studio. Make sure you set your project to allow usage of python code in R studio. Follow the instructions provided. The second video on how to use this template will show you how to set up your project to run python code in R studio.
+-->
+
+
 ## Python Example with Common Libraries  
 
 This is an example of how to use Python code in a R Markdown document. We will use the `reticulate` package to run Python code in this R Markdown document.
