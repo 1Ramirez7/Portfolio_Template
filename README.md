@@ -1,18 +1,6 @@
-# Portfolio_Template
+notes so far
 
-testing with r studio build option not displaying. 
-
-
-This is for the 12th commit to the master branch. 
-This has steps from creating repo, creating project, uploading files for site build, render website locally, pushed to github and set settings to render site
-then has steps to add a new tab. 
-
-
-For the following commits I will try and work with python code, which is proving to be challenging but it is something that needs to happen because it is what has been causing the most trouble with gh-pages, and also when I added python code it threw some errors
-
-
-
-This is current notes for this ( not included in the 12th commit to the master branch)
+I will not include the python files for the portfolio template. I will include steps to add python files to the portfolio template if needed.
 
 Portfolio template steps
 1.	Video to create the github repository with readme.md file, and how to create r studio project
@@ -34,6 +22,18 @@ c.	Update yml links
 i.	Build > render website
 ii.	Or run this code in the console or terminal: quarto render --execute _quarto.yml
 d.	Push to github and the site should be updated with your new tab.
+4.	Adding python code files via R studio.
+a.	Create python env for this project
+i.	Or load if already one. Most likely not
+ii.	Check to see correct env is loaded
+b.	Install needed python libraries
+i.	Or run code to install libraries in requirements.txt file 
+c.	Run a qmd with python code and render it (do other steps when adding new files to the site)
+d.	Create/update the requirements.txt file
+e.	Push to git hub
+
+
+
 
 Part 1.
 1.	In your repository page, create a new repository
@@ -65,7 +65,7 @@ i.	Run this command in the console
 ii.	The goal of this command is to let r studio know this is a _site and gives the option to build site and render website (option next to git)
 c.	Render the website using the build option in r studio
 i.	After using the manual render site, github should now have an option to build > render website. 
-1.	Render website 
+1.	Render website use this code
 quarto::quarto_render()
 
 2.	Push to github
@@ -78,5 +78,30 @@ c.	If done correctly the site should be live.
 
 Part 3
 Not to complicated
+
+Part 4. Working with Python code, enviroment, and requirements.txt files in R-studio
+step 1. Check what environment is active (likely a global environment)
+library(reticulate)
+py_config()
+
+step1.7: create virtual env if needed (basically needed in any new device)
+library(reticulate)  # I wonder if the line below can stand alone
+virtualenv_create("env") # env is the name which can be anything, but will use env for instructions
+
+step 1.5: load env for project if needed, so use code from step 1 to make sure the new env is loaded. If not use this to load the new env. Again replace env with the actual name you gave your env.
+library(reticulate)
+use_virtualenv("env", required = TRUE)
+
+Step 2. Install python libraries 
+library(reticulate)
+py_install(c("pandas", "numpy", "matplotlib"))
+
+step 2.1: run python code/file and render python files
+
+Step 3 : creates/updates the requirements.txt file
+shell("pip freeze > requirements.txt")
+
+
+
 
 

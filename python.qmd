@@ -5,7 +5,7 @@ format: html
 
 ## Python Example with Common Libraries
 
-```{python}
+```{python, eval=FALSE}
 # Import common libraries
 import pandas as pd
 import numpy as np
@@ -23,7 +23,7 @@ data.head()
 
 ```
 
-```{python}
+```{python, eval=FALSE}
 # Plot the data
 plt.plot(data["x"], data["y"], label="sin(x)")
 plt.xlabel("x")
@@ -33,7 +33,7 @@ plt.legend()
 plt.show()
 ```
 
-```{python}
+```{python, eval=FALSE}
 # Import plotly
 import plotly.express as px
 
@@ -46,7 +46,7 @@ fig.show()
 ```
 
 
-```{python}
+```{python, eval=FALSE}
 
 # Import scipy for signal processing
 from scipy.signal import find_peaks
@@ -89,9 +89,3 @@ step 2.1: run python code and render python files
 Step 3 : creates/updates the requirements.txt file
 shell("pip freeze > requirements.txt")
 
-library(reticulate)
-py_install(c("seaborn"))
-
-
-library(reticulate)
-py_install(c("spicy"))
