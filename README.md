@@ -1,6 +1,5 @@
-notes so far
+notes so far, this push is for Part 5 (parts 1-4 have already been done [part 4 has been remove to avoid python steps])
 
-I will not include the python files for the portfolio template. I will include steps to add python files to the portfolio template if needed.
 
 Portfolio template steps
 1.	Video to create the github repository with readme.md file, and how to create r studio project
