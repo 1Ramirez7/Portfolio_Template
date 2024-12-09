@@ -1,6 +1,9 @@
 project: 
   type: website
   output-dir: docs # renders htmls to docs folder
+
+freeze: auto # Automatically freezes files unless changed
+  
 website:
   title: "Albert Einstein's Data Science Portfolio"
   favicon: Images/favicon.png
